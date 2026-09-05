@@ -110,3 +110,20 @@ def test_chord_positions_within_lyric_bounds(songs):
                 lyric_len = len(line["lyrics"])
                 for c in line["chords"]:
                     assert 0 <= c["position"] <= lyric_len
+
+
+def test_chords_on_the_same_line_never_overlap(songs):
+    """The frontend renders the chord row as plain fixed-width text with one
+    chord name written at each position - two chords whose names overlap
+    (e.g. "Gmaj7" at position 4 running into "Em7" at position 8) collide
+    into unreadable text like "GmajEm7" instead of colliding gracefully."""
+    for s in songs:
+        for sec in s["sections"]:
+            for line in sec["lines"]:
+                chords = sorted(line["chords"], key=lambda c: c["position"])
+                for a, b in zip(chords, chords[1:]):
+                    a_end = a["position"] + len(a["chord"])
+                    assert b["position"] >= a_end, (
+                        f"{s['_id']} / {sec['name']}: {a['chord']!r}@{a['position']} "
+                        f"overlaps {b['chord']!r}@{b['position']} in line {line['lyrics']!r}"
+                    )

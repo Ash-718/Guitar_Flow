@@ -437,12 +437,8 @@
                 "position": 11
               },
               {
-                "chord": "D",
-                "position": 16
-              },
-              {
                 "chord": "G",
-                "position": 24
+                "position": 16
               },
               {
                 "chord": "A",
@@ -650,12 +646,8 @@
                 "position": 11
               },
               {
-                "chord": "D",
-                "position": 16
-              },
-              {
                 "chord": "G",
-                "position": 24
+                "position": 16
               },
               {
                 "chord": "A",
@@ -2612,7 +2604,7 @@
         "name": "Intro",
         "lines": [
           {
-            "lyrics": "Mm, mm, mm",
+            "lyrics": "Mm        mm        mm",
             "chords": [
               {
                 "chord": "G",
@@ -2620,16 +2612,16 @@
               },
               {
                 "chord": "Gmaj7",
-                "position": 4
+                "position": 10
               },
               {
                 "chord": "Em7",
-                "position": 8
+                "position": 20
               }
             ]
           },
           {
-            "lyrics": "Mm, mm, mm",
+            "lyrics": "Mm        mm        mm",
             "chords": [
               {
                 "chord": "C",
@@ -2637,11 +2629,11 @@
               },
               {
                 "chord": "Cadd9",
-                "position": 4
+                "position": 10
               },
               {
                 "chord": "D",
-                "position": 8
+                "position": 20
               }
             ]
           }
@@ -3013,7 +3005,7 @@
         "name": "Bridge",
         "lines": [
           {
-            "lyrics": "Every longest night has ended once before",
+            "lyrics": "Every longest night has ended",
             "chords": [
               {
                 "chord": "Em",
@@ -3025,16 +3017,16 @@
               },
               {
                 "chord": "G",
-                "position": 24
+                "position": 14
               },
               {
                 "chord": "D",
-                "position": 30
+                "position": 24
               }
             ]
           },
           {
-            "lyrics": "Every longest night has walked me to your door",
+            "lyrics": "Every longest night leads home",
             "chords": [
               {
                 "chord": "Em",
@@ -3046,11 +3038,11 @@
               },
               {
                 "chord": "D",
-                "position": 24
+                "position": 14
               },
               {
                 "chord": "G",
-                "position": 42
+                "position": 26
               }
             ]
           }
@@ -3125,7 +3117,7 @@
         "name": "Outro",
         "lines": [
           {
-            "lyrics": "Mm, mm, mm",
+            "lyrics": "Mm        mm        mm",
             "chords": [
               {
                 "chord": "G",
@@ -3133,16 +3125,16 @@
               },
               {
                 "chord": "Gmaj7",
-                "position": 4
+                "position": 10
               },
               {
                 "chord": "Em7",
-                "position": 8
+                "position": 20
               }
             ]
           },
           {
-            "lyrics": "Mm, mm, mm, mm",
+            "lyrics": "Mm        mm        mm        mm",
             "chords": [
               {
                 "chord": "C",
@@ -3150,15 +3142,15 @@
               },
               {
                 "chord": "Cadd9",
-                "position": 4
+                "position": 10
               },
               {
                 "chord": "D",
-                "position": 8
+                "position": 20
               },
               {
                 "chord": "G",
-                "position": 12
+                "position": 30
               }
             ]
           }

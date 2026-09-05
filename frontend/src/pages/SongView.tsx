@@ -271,7 +271,10 @@ export function SongView() {
         </div>
 
         <div className="flex flex-wrap gap-2">
-          <Button variant="primary" onClick={() => navigate(`/songs/${song.id}/play`)}>
+          <Button
+            variant="primary"
+            onClick={() => navigate(`/songs/${song.id}/play`, { state: { song: displayedSong } })}
+          >
             ▶ Play
           </Button>
           <Button variant={editMode ? 'primary' : 'secondary'} onClick={handleEditClick}>
@@ -346,15 +349,17 @@ export function SongView() {
 
       <StrummingPatternView pattern={song.strumming_pattern.pattern} bpm={song.strumming_pattern.bpm} />
 
-      <div className="flex flex-col gap-6 border-t pt-6" style={{ borderColor: 'var(--border)' }}>
-        {displayedSong.sections.map((section, i) => (
-          <SectionBlock
-            key={i}
-            section={section}
-            sectionIndex={i}
-            onChordClick={handleChordClick}
-          />
-        ))}
+      <div className="overflow-x-auto border-t pt-6" style={{ borderColor: 'var(--border)' }}>
+        <div className="flex w-max min-w-full flex-col gap-6">
+          {displayedSong.sections.map((section, i) => (
+            <SectionBlock
+              key={i}
+              section={section}
+              sectionIndex={i}
+              onChordClick={handleChordClick}
+            />
+          ))}
+        </div>
       </div>
 
       {editingTarget && (
