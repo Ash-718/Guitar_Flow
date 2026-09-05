@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  --color-ink-950: #0b0a09;
+  --color-ink-900: #14120f;
+  --color-ink-800: #1e1b17;
+  --color-ink-700: #2b2723;
+  --color-ink-600: #3d3731;
+  --color-ink-500: #574f46;
+  --color-ink-400: #7a6f63;
+  --color-ink-300: #a89d90;
+  --color-ink-200: #d3c9bc;
+  --color-ink-100: #ede6db;
+  --color-ink-50: #f8f5ef;
+
+  --color-amber-400: #e8a33d;
+  --color-amber-500: #d98c1f;
+  --color-amber-600: #b8720f;
+
+  --color-string-500: #3d8f7a;
+  --color-string-600: #2e6f5e;
+}
+
+:root {
+  color-scheme: light;
+  --bg: var(--color-ink-50);
+  --surface: #ffffff;
+  --surface-raised: var(--color-ink-100);
+  --text: var(--color-ink-900);
+  --text-muted: var(--color-ink-500);
+  --border: var(--color-ink-200);
+  --accent: var(--color-amber-600);
+  --accent-contrast: #ffffff;
+}
+
+:root[data-theme="dark"],
+:root:not([data-theme="light"]) {
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+    --bg: var(--color-ink-950);
+    --surface: var(--color-ink-900);
+    --surface-raised: var(--color-ink-800);
+    --text: var(--color-ink-50);
+    --text-muted: var(--color-ink-300);
+    --border: var(--color-ink-700);
+    --accent: var(--color-amber-400);
+    --accent-contrast: var(--color-ink-950);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: var(--color-ink-950);
+  --surface: var(--color-ink-900);
+  --surface-raised: var(--color-ink-800);
+  --text: var(--color-ink-50);
+  --text-muted: var(--color-ink-300);
+  --border: var(--color-ink-700);
+  --accent: var(--color-amber-400);
+  --accent-contrast: var(--color-ink-950);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+/* Chord chart typography - monospace so chords align above lyrics predictably */
+.chordsheet {
+  font-family: var(--font-mono);
+  font-variant-ligatures: none;
+}
