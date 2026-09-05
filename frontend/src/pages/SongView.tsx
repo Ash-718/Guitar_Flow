@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ChordDiagramPopup } from '../components/chords/ChordDiagramPopup'
 import { ChordEditor } from '../components/chords/ChordEditor'
 import { SimplifyPreview, type SimplifyDiffEntry } from '../components/chords/SimplifyPreview'
+import { Metronome } from '../components/metronome/Metronome'
 import { CapoControl } from '../components/song/CapoControl'
 import { SectionBlock } from '../components/song/SectionBlock'
 import { StrummingPatternView } from '../components/song/StrummingPatternView'
@@ -63,6 +64,7 @@ export function SongView() {
   const [transposedKey, setTransposedKey] = useState<string | null>(null)
 
   const [pendingSimplify, setPendingSimplify] = useState<PendingSimplification | null>(null)
+  const [showMetronome, setShowMetronome] = useState(false)
 
   const [chordLibrary, setChordLibrary] = useState<ChordLibraryEntry[]>([])
   const [viewingDiagramFor, setViewingDiagramFor] = useState<string | null>(null)
@@ -85,6 +87,7 @@ export function SongView() {
     setPendingSimplify(null)
     setExistingVersionId(null)
     setSaveStatus('idle')
+    setShowMetronome(false)
     getSong(id)
       .then((s) => {
         setSong(s)
@@ -419,7 +422,19 @@ export function SongView() {
         ))}
       </div>
 
-      <StrummingPatternView pattern={song.strumming_pattern.pattern} bpm={song.strumming_pattern.bpm} />
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <StrummingPatternView pattern={song.strumming_pattern.pattern} bpm={song.strumming_pattern.bpm} />
+        <button
+          type="button"
+          onClick={() => setShowMetronome((prev) => !prev)}
+          className="text-sm font-semibold underline"
+          style={{ color: 'var(--accent)' }}
+        >
+          {showMetronome ? 'Hide metronome' : 'Metronome'}
+        </button>
+      </div>
+
+      {showMetronome && <Metronome initialBpm={song.bpm} />}
 
       <div className="overflow-x-auto border-t pt-6" style={{ borderColor: 'var(--border)' }}>
         <div className="flex w-max min-w-full flex-col gap-6">
