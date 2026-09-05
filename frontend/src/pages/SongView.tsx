@@ -3,10 +3,13 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ChordEditor } from '../components/chords/ChordEditor'
 import { SectionBlock } from '../components/song/SectionBlock'
 import { StrummingPatternView } from '../components/song/StrummingPatternView'
+import { TransposeControl } from '../components/song/TransposeControl'
 import { Button } from '../components/ui/Button'
 import { getSong } from '../services/songService'
+import { transposeChords } from '../services/theoryService'
 import type { Song } from '../types/song'
 import { applyChordOverrides, overrideKey } from '../utils/applyChordOverrides'
+import { flattenChordStrings, reconstructWithChords } from '../utils/flattenChords'
 import { recordRecentlyViewed } from '../utils/recentlyViewed'
 import { getDistinctChords } from '../utils/songChords'
 
@@ -30,6 +33,10 @@ export function SongView() {
   const [chordOverrides, setChordOverrides] = useState<Map<string, string>>(new Map())
   const [editingTarget, setEditingTarget] = useState<EditingTarget | null>(null)
 
+  const [showTranspose, setShowTranspose] = useState(false)
+  const [transposeSemitones, setTransposeSemitones] = useState(0)
+  const [transposedSong, setTransposedSong] = useState<Song | null>(null)
+
   useEffect(() => {
     if (!id) return
     setSong(null)
@@ -37,6 +44,9 @@ export function SongView() {
     setTab('original')
     setEditMode(false)
     setChordOverrides(new Map())
+    setShowTranspose(false)
+    setTransposeSemitones(0)
+    setTransposedSong(null)
     getSong(id)
       .then((s) => {
         setSong(s)
@@ -45,14 +55,42 @@ export function SongView() {
       .catch(() => setError('Song not found.'))
   }, [id])
 
-  const myVersion = useMemo(
+  const myVersionBeforeTranspose = useMemo(
     () => (song ? applyChordOverrides(song, chordOverrides) : null),
     [song, chordOverrides],
   )
+
+  // Transposition is computed by the backend (single source of truth for the
+  // music theory), so it's applied as an effect rather than a sync memo.
+  useEffect(() => {
+    if (!myVersionBeforeTranspose) return
+    if (transposeSemitones === 0) {
+      setTransposedSong(myVersionBeforeTranspose)
+      return
+    }
+    let cancelled = false
+    const flat = [...flattenChordStrings(myVersionBeforeTranspose), myVersionBeforeTranspose.key]
+    transposeChords(flat, transposeSemitones).then((result) => {
+      if (cancelled) return
+      const newKey = result[result.length - 1]
+      const newChords = result.slice(0, -1)
+      setTransposedSong({ ...reconstructWithChords(myVersionBeforeTranspose, newChords), key: newKey })
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [myVersionBeforeTranspose, transposeSemitones])
+
+  const myVersion = transposedSong ?? myVersionBeforeTranspose
   const displayedSong = tab === 'mine' ? myVersion : song
 
   function handleEditClick() {
     setEditMode((prev) => !prev)
+    setTab('mine')
+  }
+
+  function handleTransposeClick() {
+    setShowTranspose((prev) => !prev)
     setTab('mine')
   }
 
@@ -61,12 +99,23 @@ export function SongView() {
     setEditingTarget({ sectionIndex, lineIndex, chordIndex, currentChord: chord })
   }
 
-  function handleChordSelected(newChord: string) {
+  async function handleChordSelected(newChord: string) {
     if (!editingTarget) return
     const key = overrideKey(editingTarget.sectionIndex, editingTarget.lineIndex, editingTarget.chordIndex)
+
+    // Overrides are stored against the untransposed song (so re-transposing
+    // later shifts a manual substitution too, same as any other chord). The
+    // chord the user just picked was chosen in the *current*, possibly
+    // transposed, view - so store its untransposed equivalent.
+    let storedChord = newChord
+    if (transposeSemitones !== 0) {
+      const [reversed] = await transposeChords([newChord], -transposeSemitones)
+      storedChord = reversed
+    }
+
     setChordOverrides((prev) => {
       const next = new Map(prev)
-      next.set(key, newChord)
+      next.set(key, storedChord)
       return next
     })
     setTab('mine')
@@ -93,7 +142,7 @@ export function SongView() {
   }
 
   const distinctChords = getDistinctChords(displayedSong)
-  const hasEdits = chordOverrides.size > 0
+  const hasEdits = chordOverrides.size > 0 || transposeSemitones !== 0
 
   return (
     <div className="mx-auto flex max-w-3xl flex-col gap-6 px-4 py-8 sm:py-10">
@@ -109,7 +158,7 @@ export function SongView() {
 
         <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm" style={{ color: 'var(--text-muted)' }}>
           <span>
-            Key <strong style={{ color: 'var(--text)' }}>{song.key}</strong>
+            Key <strong style={{ color: 'var(--text)' }}>{displayedSong.key}</strong>
           </span>
           <span>
             BPM <strong style={{ color: 'var(--text)' }}>{song.bpm}</strong>
@@ -129,7 +178,7 @@ export function SongView() {
           <Button variant={editMode ? 'primary' : 'secondary'} onClick={handleEditClick}>
             {editMode ? 'Done editing' : 'Edit'}
           </Button>
-          <Button disabled title="Coming in a later phase">
+          <Button variant={showTranspose ? 'primary' : 'secondary'} onClick={handleTransposeClick}>
             Transpose
           </Button>
           <Button disabled title="Coming in a later phase">
@@ -144,6 +193,14 @@ export function SongView() {
           <p className="text-sm" style={{ color: 'var(--accent)' }}>
             Tap any chord below to change it.
           </p>
+        )}
+
+        {showTranspose && myVersion && (
+          <TransposeControl
+            semitones={transposeSemitones}
+            displayKey={myVersion.key}
+            onChange={setTransposeSemitones}
+          />
         )}
       </div>
 
