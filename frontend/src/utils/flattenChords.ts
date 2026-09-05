@@ -15,6 +15,27 @@ export function flattenChordStrings(song: Song): string[] {
   return result
 }
 
+export interface ChordOccurrence {
+  sectionIndex: number
+  lineIndex: number
+  chordIndex: number
+  chord: string
+}
+
+/** Same walk order as flattenChordStrings, but keeping the position indices
+ * needed to write a chord_override at a specific spot. */
+export function getChordOccurrences(song: Song): ChordOccurrence[] {
+  const result: ChordOccurrence[] = []
+  song.sections.forEach((section, sectionIndex) => {
+    section.lines.forEach((line, lineIndex) => {
+      line.chords.forEach((c, chordIndex) => {
+        result.push({ sectionIndex, lineIndex, chordIndex, chord: c.chord })
+      })
+    })
+  })
+  return result
+}
+
 export function reconstructWithChords(song: Song, flatChords: string[]): Song {
   let cursor = 0
   return {
