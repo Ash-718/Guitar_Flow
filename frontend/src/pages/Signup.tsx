@@ -1,7 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
-import { syncUser } from '../services/userService'
 
 export function Signup() {
   const { signUp, isConfigured } = useAuth()
@@ -17,8 +16,7 @@ export function Signup() {
     setError(null)
     setSubmitting(true)
     try {
-      await signUp(email, password)
-      await syncUser(name, email).catch(() => {})
+      await signUp(email, password, name)
       navigate('/')
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Could not create account')

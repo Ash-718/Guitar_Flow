@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { getAuth } from 'firebase/auth'
+import { connectAuthEmulator, getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -8,8 +8,17 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
 }
 
-export const firebaseConfigured = Boolean(firebaseConfig.apiKey && firebaseConfig.projectId)
+const useEmulator = import.meta.env.VITE_USE_AUTH_EMULATOR === 'true'
+const hasRealConfig = Boolean(firebaseConfig.apiKey && firebaseConfig.projectId)
 
-const app = initializeApp(firebaseConfigured ? firebaseConfig : { apiKey: 'demo', projectId: 'demo' })
+// A real project isn't required to develop against: VITE_USE_AUTH_EMULATOR=true
+// runs auth entirely against the local Firebase Auth emulator (see README).
+export const firebaseConfigured = useEmulator || hasRealConfig
+
+const app = initializeApp(hasRealConfig ? firebaseConfig : { apiKey: 'demo-key', projectId: 'demo-project' })
 
 export const auth = getAuth(app)
+
+if (useEmulator) {
+  connectAuthEmulator(auth, 'http://localhost:9099', { disableWarnings: true })
+}

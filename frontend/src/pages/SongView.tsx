@@ -8,12 +8,19 @@ import { SectionBlock } from '../components/song/SectionBlock'
 import { StrummingPatternView } from '../components/song/StrummingPatternView'
 import { TransposeControl } from '../components/song/TransposeControl'
 import { Button } from '../components/ui/Button'
+import { useAuth } from '../contexts/AuthContext'
 import { listChords } from '../services/chordService'
 import { getSong } from '../services/songService'
 import { simplifyChords, transposeChords } from '../services/theoryService'
+import { createVersion, listVersions, updateVersion } from '../services/versionService'
 import type { ChordLibraryEntry } from '../types/chord'
 import type { Song } from '../types/song'
-import { applyChordOverrides, overrideKey } from '../utils/applyChordOverrides'
+import {
+  applyChordOverrides,
+  overrideKey,
+  overridesListToMap,
+  overridesMapToList,
+} from '../utils/applyChordOverrides'
 import { flattenChordStrings, getChordOccurrences, reconstructWithChords } from '../utils/flattenChords'
 import { recordRecentlyViewed } from '../utils/recentlyViewed'
 import { getDistinctChords } from '../utils/songChords'
@@ -32,11 +39,17 @@ interface PendingSimplification {
   overrides: { key: string; chord: string }[]
 }
 
+type SaveStatus = 'idle' | 'saving' | 'saved' | 'error'
+
 export function SongView() {
   const { id } = useParams()
   const navigate = useNavigate()
+  const { currentUser } = useAuth()
   const [song, setSong] = useState<Song | null>(null)
   const [error, setError] = useState<string | null>(null)
+
+  const [existingVersionId, setExistingVersionId] = useState<string | null>(null)
+  const [saveStatus, setSaveStatus] = useState<SaveStatus>('idle')
 
   const [tab, setTab] = useState<Tab>('original')
   const [editMode, setEditMode] = useState(false)
@@ -70,6 +83,8 @@ export function SongView() {
     setShapesSong(null)
     setTransposedKey(null)
     setPendingSimplify(null)
+    setExistingVersionId(null)
+    setSaveStatus('idle')
     getSong(id)
       .then((s) => {
         setSong(s)
@@ -78,6 +93,26 @@ export function SongView() {
       })
       .catch(() => setError('Song not found.'))
   }, [id])
+
+  // Resume the guitarist's saved customization for this song, if any - MVP
+  // scope is one "My Version" per user per song (matching the product spec's
+  // Original/My Version example), so further saves update it in place.
+  useEffect(() => {
+    if (!song || !currentUser) return
+    let cancelled = false
+    listVersions(song.id).then((versions) => {
+      if (cancelled || versions.length === 0) return
+      const existing = versions[0]
+      setExistingVersionId(existing.id)
+      setTransposeSemitones(existing.transpose_semitones)
+      setCapoSetting(existing.capo_override ?? song.capo)
+      setChordOverrides(overridesListToMap(existing.chord_overrides))
+      setTab('mine')
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [song, currentUser])
 
   const myVersionBeforeTranspose = useMemo(
     () => (song ? applyChordOverrides(song, chordOverrides) : null),
@@ -217,6 +252,35 @@ export function SongView() {
     setPendingSimplify(null)
   }
 
+  async function handleSaveClick() {
+    if (!song) return
+    if (!currentUser) {
+      navigate('/login')
+      return
+    }
+
+    setSaveStatus('saving')
+    const payload = {
+      name: 'My Version',
+      transpose_semitones: transposeSemitones,
+      capo_override: capoSetting !== song.capo ? capoSetting : null,
+      chord_overrides: overridesMapToList(chordOverrides),
+    }
+
+    try {
+      if (existingVersionId) {
+        await updateVersion(existingVersionId, payload)
+      } else {
+        const created = await createVersion(song.id, payload)
+        setExistingVersionId(created.id)
+      }
+      setSaveStatus('saved')
+      setTimeout(() => setSaveStatus('idle'), 2500)
+    } catch {
+      setSaveStatus('error')
+    }
+  }
+
   if (error) {
     return (
       <div className="mx-auto max-w-2xl px-4 py-16 text-center">
@@ -284,10 +348,18 @@ export function SongView() {
             Transpose
           </Button>
           <Button onClick={handleSimplifyClick}>Simplify</Button>
-          <Button disabled={!hasEdits} title={hasEdits ? undefined : 'Make an edit first'}>
-            Save
+          <Button
+            onClick={handleSaveClick}
+            disabled={!hasEdits || saveStatus === 'saving'}
+            title={!hasEdits ? 'Make an edit first' : !currentUser ? 'Log in to save your version' : undefined}
+          >
+            {saveStatus === 'saving' ? 'Saving...' : saveStatus === 'saved' ? 'Saved ✓' : 'Save'}
           </Button>
         </div>
+
+        {saveStatus === 'error' && (
+          <p className="text-sm text-red-500">Couldn't save - try again.</p>
+        )}
 
         {editMode ? (
           <p className="text-sm" style={{ color: 'var(--accent)' }}>

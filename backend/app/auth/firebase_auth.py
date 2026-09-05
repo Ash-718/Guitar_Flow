@@ -27,6 +27,12 @@ def _ensure_initialized() -> None:
     if settings.firebase_service_account_path:
         cred = credentials.Certificate(settings.firebase_service_account_path)
         _app = firebase_admin.initialize_app(cred)
+    elif settings.firebase_project_id:
+        # No service account on hand (e.g. verifying tokens from a local
+        # Auth emulator, or running under Application Default Credentials
+        # without one) - verify_id_token doesn't need real credentials, but
+        # the SDK still needs to be told which project's tokens to accept.
+        _app = firebase_admin.initialize_app(options={"projectId": settings.firebase_project_id})
     else:
         _app = firebase_admin.initialize_app()
 

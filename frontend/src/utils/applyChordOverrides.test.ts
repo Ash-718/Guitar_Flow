@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Song } from '../types/song'
-import { applyChordOverrides, overrideKey } from './applyChordOverrides'
+import { applyChordOverrides, overrideKey, overridesListToMap, overridesMapToList } from './applyChordOverrides'
 
 function makeSong(): Song {
   return {
@@ -48,5 +48,25 @@ describe('applyChordOverrides', () => {
     const overrides = new Map([[overrideKey(0, 0, 1), 'Cadd9']])
     const result = applyChordOverrides(song, overrides)
     expect(result.sections[0].lines[0].chords[1].position).toBe(3)
+  })
+})
+
+describe('overridesMapToList / overridesListToMap', () => {
+  it('round-trips a map through the backend ChordOverride list shape and back', () => {
+    const map = new Map([
+      [overrideKey(0, 0, 1), 'Am'],
+      [overrideKey(1, 2, 0), 'F#m7'],
+    ])
+    const list = overridesMapToList(map)
+    expect(list).toContainEqual({ section_index: 0, line_index: 0, chord_index: 1, chord: 'Am' })
+    expect(list).toContainEqual({ section_index: 1, line_index: 2, chord_index: 0, chord: 'F#m7' })
+
+    const roundTripped = overridesListToMap(list)
+    expect(roundTripped).toEqual(map)
+  })
+
+  it('an empty map round-trips to an empty list and back', () => {
+    expect(overridesMapToList(new Map())).toEqual([])
+    expect(overridesListToMap([])).toEqual(new Map())
   })
 })

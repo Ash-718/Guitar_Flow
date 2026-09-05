@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     mongodb_db_name: str = "guitarflow"
     cors_origins: str = "http://localhost:5173"
     firebase_service_account_path: str = ""
+    firebase_project_id: str = ""
     auth_dev_bypass: bool = False
 
     @property
