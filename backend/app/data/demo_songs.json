@@ -1,0 +1,3515 @@
+[
+  {
+    "_id": "song-morning-light",
+    "title": "Morning Light",
+    "artist": "Wren & Sable",
+    "key": "G",
+    "bpm": 96,
+    "capo": 0,
+    "difficulty": "beginner",
+    "tags": [
+      "pop",
+      "folk",
+      "beginner"
+    ],
+    "strumming_pattern": {
+      "pattern": "D D U U D U",
+      "bpm": 96
+    },
+    "sections": [
+      {
+        "name": "Verse 1",
+        "lines": [
+          {
+            "lyrics": "Sunlight through the kitchen blinds",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 21
+              }
+            ]
+          },
+          {
+            "lyrics": "Coffee steam is rising slow",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 16
+              }
+            ]
+          },
+          {
+            "lyrics": "Birds are calling out my name",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 10
+              }
+            ]
+          },
+          {
+            "lyrics": "Nothing here has changed at all",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 17
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "This is home, this is mine",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 14
+              }
+            ]
+          },
+          {
+            "lyrics": "Every corner feels like sunshine",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 13
+              },
+              {
+                "chord": "D",
+                "position": 24
+              }
+            ]
+          },
+          {
+            "lyrics": "Right here is where I'll stay",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 14
+              }
+            ]
+          },
+          {
+            "lyrics": "Morning light will lead the way",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 8
+              },
+              {
+                "chord": "D",
+                "position": 19
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "lines": [
+          {
+            "lyrics": "Kettle whistles, window wide",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 17
+              }
+            ]
+          },
+          {
+            "lyrics": "Neighbors waving side to side",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 17
+              }
+            ]
+          },
+          {
+            "lyrics": "Radio hums an easy tune",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 14
+              }
+            ]
+          },
+          {
+            "lyrics": "Nothing to chase, no need to run",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 18
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "This is home, this is mine",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 14
+              }
+            ]
+          },
+          {
+            "lyrics": "Every corner feels like sunshine",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 13
+              },
+              {
+                "chord": "D",
+                "position": 24
+              }
+            ]
+          },
+          {
+            "lyrics": "Right here is where I'll stay",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 14
+              }
+            ]
+          },
+          {
+            "lyrics": "Morning light will lead the way",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 8
+              },
+              {
+                "chord": "D",
+                "position": 19
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "platform"
+  },
+  {
+    "_id": "song-harbor-road",
+    "title": "Harbor Road",
+    "artist": "The Salt Line",
+    "key": "D",
+    "bpm": 84,
+    "capo": 0,
+    "difficulty": "intermediate",
+    "tags": [
+      "folk",
+      "rock",
+      "intermediate"
+    ],
+    "strumming_pattern": {
+      "pattern": "D DU UDU",
+      "bpm": 84
+    },
+    "sections": [
+      {
+        "name": "Verse 1",
+        "lines": [
+          {
+            "lyrics": "Salt on the window, gulls in the grey",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "A",
+                "position": 12
+              },
+              {
+                "chord": "Bm",
+                "position": 20
+              },
+              {
+                "chord": "G",
+                "position": 33
+              }
+            ]
+          },
+          {
+            "lyrics": "Boats lean easy at the end of the bay",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "Dmaj7",
+                "position": 11
+              },
+              {
+                "chord": "G",
+                "position": 23
+              },
+              {
+                "chord": "A",
+                "position": 34
+              }
+            ]
+          },
+          {
+            "lyrics": "I left my coat back at the harbor road",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "A",
+                "position": 10
+              },
+              {
+                "chord": "Bm",
+                "position": 27
+              },
+              {
+                "chord": "G",
+                "position": 34
+              }
+            ]
+          },
+          {
+            "lyrics": "Followed the tide wherever it goes",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 13
+              },
+              {
+                "chord": "A",
+                "position": 27
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Take me back to the water",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 8
+              },
+              {
+                "chord": "G/B",
+                "position": 20
+              }
+            ]
+          },
+          {
+            "lyrics": "Where the lighthouse burns slow",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 10
+              },
+              {
+                "chord": "Bm",
+                "position": 21
+              },
+              {
+                "chord": "G",
+                "position": 27
+              }
+            ]
+          },
+          {
+            "lyrics": "Take me back to the water",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 8
+              },
+              {
+                "chord": "G/B",
+                "position": 20
+              }
+            ]
+          },
+          {
+            "lyrics": "That's the only place I know",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 11
+              },
+              {
+                "chord": "D",
+                "position": 16
+              },
+              {
+                "chord": "G",
+                "position": 24
+              },
+              {
+                "chord": "A",
+                "position": 24
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "lines": [
+          {
+            "lyrics": "Nets hung drying, ropes coiled tight",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "A",
+                "position": 10
+              },
+              {
+                "chord": "Bm",
+                "position": 18
+              },
+              {
+                "chord": "G",
+                "position": 31
+              }
+            ]
+          },
+          {
+            "lyrics": "Fishermen humming under harbor light",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "Dmaj7",
+                "position": 10
+              },
+              {
+                "chord": "G",
+                "position": 24
+              },
+              {
+                "chord": "A",
+                "position": 31
+              }
+            ]
+          },
+          {
+            "lyrics": "Every wave writes a line I know",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "A",
+                "position": 6
+              },
+              {
+                "chord": "Bm",
+                "position": 20
+              },
+              {
+                "chord": "G",
+                "position": 27
+              }
+            ]
+          },
+          {
+            "lyrics": "Salt in my collar, nowhere to go",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 11
+              },
+              {
+                "chord": "A",
+                "position": 19
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bridge",
+        "lines": [
+          {
+            "lyrics": "Maybe the sea remembers names",
+            "chords": [
+              {
+                "chord": "Bm",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 10
+              },
+              {
+                "chord": "D",
+                "position": 24
+              }
+            ]
+          },
+          {
+            "lyrics": "Maybe the tide feels just the same",
+            "chords": [
+              {
+                "chord": "Bm",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 10
+              },
+              {
+                "chord": "A",
+                "position": 21
+              },
+              {
+                "chord": "A",
+                "position": 30
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Take me back to the water",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 8
+              },
+              {
+                "chord": "G/B",
+                "position": 20
+              }
+            ]
+          },
+          {
+            "lyrics": "Where the lighthouse burns slow",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 10
+              },
+              {
+                "chord": "Bm",
+                "position": 21
+              },
+              {
+                "chord": "G",
+                "position": 27
+              }
+            ]
+          },
+          {
+            "lyrics": "Take me back to the water",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 8
+              },
+              {
+                "chord": "G/B",
+                "position": 20
+              }
+            ]
+          },
+          {
+            "lyrics": "That's the only place I know",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 11
+              },
+              {
+                "chord": "D",
+                "position": 16
+              },
+              {
+                "chord": "G",
+                "position": 24
+              },
+              {
+                "chord": "A",
+                "position": 24
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "platform"
+  },
+  {
+    "_id": "song-autumn-static",
+    "title": "Autumn Static",
+    "artist": "Coldwater Bend",
+    "key": "Am",
+    "bpm": 78,
+    "capo": 0,
+    "difficulty": "beginner",
+    "tags": [
+      "folk",
+      "minor",
+      "beginner"
+    ],
+    "strumming_pattern": {
+      "pattern": "D D DU D DU",
+      "bpm": 78
+    },
+    "sections": [
+      {
+        "name": "Verse 1",
+        "lines": [
+          {
+            "lyrics": "Leaves on the windshield, porch light on",
+            "chords": [
+              {
+                "chord": "Am",
+                "position": 0
+              },
+              {
+                "chord": "F",
+                "position": 14
+              },
+              {
+                "chord": "C",
+                "position": 26
+              },
+              {
+                "chord": "G",
+                "position": 38
+              }
+            ]
+          },
+          {
+            "lyrics": "Radio crackles an old static song",
+            "chords": [
+              {
+                "chord": "Am",
+                "position": 0
+              },
+              {
+                "chord": "F",
+                "position": 6
+              },
+              {
+                "chord": "C",
+                "position": 18
+              },
+              {
+                "chord": "G",
+                "position": 29
+              }
+            ]
+          },
+          {
+            "lyrics": "Sweater weather and coffee that's gone cold",
+            "chords": [
+              {
+                "chord": "Am",
+                "position": 0
+              },
+              {
+                "chord": "F",
+                "position": 8
+              },
+              {
+                "chord": "Dm",
+                "position": 20
+              },
+              {
+                "chord": "G",
+                "position": 34
+              }
+            ]
+          },
+          {
+            "lyrics": "Autumn always makes me feel a little old",
+            "chords": [
+              {
+                "chord": "Am",
+                "position": 0
+              },
+              {
+                "chord": "F",
+                "position": 7
+              },
+              {
+                "chord": "G",
+                "position": 23
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Hold on to the quiet",
+            "chords": [
+              {
+                "chord": "F",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 15
+              }
+            ]
+          },
+          {
+            "lyrics": "Hold on to the light",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Am",
+                "position": 15
+              }
+            ]
+          },
+          {
+            "lyrics": "Hold on to October",
+            "chords": [
+              {
+                "chord": "F",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 11
+              }
+            ]
+          },
+          {
+            "lyrics": "Hold on tight",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Am",
+                "position": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "lines": [
+          {
+            "lyrics": "Wind through the maples, sky turning grey",
+            "chords": [
+              {
+                "chord": "Am",
+                "position": 0
+              },
+              {
+                "chord": "F",
+                "position": 17
+              },
+              {
+                "chord": "C",
+                "position": 25
+              },
+              {
+                "chord": "G",
+                "position": 37
+              }
+            ]
+          },
+          {
+            "lyrics": "Somehow this season always gets its way",
+            "chords": [
+              {
+                "chord": "Am",
+                "position": 0
+              },
+              {
+                "chord": "F",
+                "position": 13
+              },
+              {
+                "chord": "C",
+                "position": 27
+              },
+              {
+                "chord": "G",
+                "position": 36
+              }
+            ]
+          },
+          {
+            "lyrics": "Boxes of sweaters, porch swing creaks",
+            "chords": [
+              {
+                "chord": "Am",
+                "position": 0
+              },
+              {
+                "chord": "F",
+                "position": 9
+              },
+              {
+                "chord": "Dm",
+                "position": 19
+              },
+              {
+                "chord": "G",
+                "position": 31
+              }
+            ]
+          },
+          {
+            "lyrics": "Something about the cold air always speaks",
+            "chords": [
+              {
+                "chord": "Am",
+                "position": 0
+              },
+              {
+                "chord": "F",
+                "position": 20
+              },
+              {
+                "chord": "G",
+                "position": 36
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Hold on to the quiet",
+            "chords": [
+              {
+                "chord": "F",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 15
+              }
+            ]
+          },
+          {
+            "lyrics": "Hold on to the light",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Am",
+                "position": 15
+              }
+            ]
+          },
+          {
+            "lyrics": "Hold on to October",
+            "chords": [
+              {
+                "chord": "F",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 11
+              }
+            ]
+          },
+          {
+            "lyrics": "Hold on tight",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Am",
+                "position": 8
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "platform"
+  },
+  {
+    "_id": "song-city-rain",
+    "title": "City Rain",
+    "artist": "Nico Marsh",
+    "key": "E",
+    "bpm": 100,
+    "capo": 0,
+    "difficulty": "advanced",
+    "tags": [
+      "rock",
+      "advanced"
+    ],
+    "strumming_pattern": {
+      "pattern": "D DU D DU",
+      "bpm": 100
+    },
+    "sections": [
+      {
+        "name": "Verse 1",
+        "lines": [
+          {
+            "lyrics": "Streetlights blur behind the glass",
+            "chords": [
+              {
+                "chord": "E",
+                "position": 0
+              },
+              {
+                "chord": "B7",
+                "position": 13
+              },
+              {
+                "chord": "C#m",
+                "position": 29
+              }
+            ]
+          },
+          {
+            "lyrics": "Taxi meter running fast",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "A/C#",
+                "position": 11
+              },
+              {
+                "chord": "E",
+                "position": 19
+              }
+            ]
+          },
+          {
+            "lyrics": "Neon signs spell out your name",
+            "chords": [
+              {
+                "chord": "E",
+                "position": 0
+              },
+              {
+                "chord": "B7",
+                "position": 5
+              },
+              {
+                "chord": "C#m",
+                "position": 26
+              }
+            ]
+          },
+          {
+            "lyrics": "Every corner looks the same",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "A/C#",
+                "position": 6
+              },
+              {
+                "chord": "E",
+                "position": 23
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "City rain, city rain",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "B7",
+                "position": 11
+              }
+            ]
+          },
+          {
+            "lyrics": "Wash away this dull refrain",
+            "chords": [
+              {
+                "chord": "C#m",
+                "position": 0
+              },
+              {
+                "chord": "A",
+                "position": 15
+              }
+            ]
+          },
+          {
+            "lyrics": "City rain, city rain",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "B7",
+                "position": 11
+              }
+            ]
+          },
+          {
+            "lyrics": "Bring me home again",
+            "chords": [
+              {
+                "chord": "E",
+                "position": 0
+              },
+              {
+                "chord": "A/C#",
+                "position": 9
+              },
+              {
+                "chord": "E",
+                "position": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "lines": [
+          {
+            "lyrics": "Umbrella broken, collar up",
+            "chords": [
+              {
+                "chord": "E",
+                "position": 0
+              },
+              {
+                "chord": "B7",
+                "position": 9
+              },
+              {
+                "chord": "C#m",
+                "position": 17
+              }
+            ]
+          },
+          {
+            "lyrics": "Coffee shop, an empty cup",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "A/C#",
+                "position": 7
+              },
+              {
+                "chord": "E",
+                "position": 16
+              }
+            ]
+          },
+          {
+            "lyrics": "Every window holds a scene",
+            "chords": [
+              {
+                "chord": "E",
+                "position": 0
+              },
+              {
+                "chord": "B7",
+                "position": 6
+              },
+              {
+                "chord": "C#m",
+                "position": 21
+              }
+            ]
+          },
+          {
+            "lyrics": "Strangers passing in between",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "A/C#",
+                "position": 10
+              },
+              {
+                "chord": "E",
+                "position": 21
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "City rain, city rain",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "B7",
+                "position": 11
+              }
+            ]
+          },
+          {
+            "lyrics": "Wash away this dull refrain",
+            "chords": [
+              {
+                "chord": "C#m",
+                "position": 0
+              },
+              {
+                "chord": "A",
+                "position": 15
+              }
+            ]
+          },
+          {
+            "lyrics": "City rain, city rain",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "B7",
+                "position": 11
+              }
+            ]
+          },
+          {
+            "lyrics": "Bring me home again",
+            "chords": [
+              {
+                "chord": "E",
+                "position": 0
+              },
+              {
+                "chord": "A/C#",
+                "position": 9
+              },
+              {
+                "chord": "E",
+                "position": 14
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "platform"
+  },
+  {
+    "_id": "song-wildflower-wine",
+    "title": "Wildflower Wine",
+    "artist": "Wren & Sable",
+    "key": "C",
+    "bpm": 92,
+    "capo": 0,
+    "difficulty": "intermediate",
+    "tags": [
+      "folk",
+      "pop",
+      "intermediate"
+    ],
+    "strumming_pattern": {
+      "pattern": "D DU UDU",
+      "bpm": 92
+    },
+    "sections": [
+      {
+        "name": "Verse 1",
+        "lines": [
+          {
+            "lyrics": "Picked you flowers from the roadside ditch",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 11
+              },
+              {
+                "chord": "Am",
+                "position": 28
+              },
+              {
+                "chord": "F",
+                "position": 37
+              }
+            ]
+          },
+          {
+            "lyrics": "Nothing fancy, didn't cost a thing",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "Cadd9",
+                "position": 8
+              },
+              {
+                "chord": "F",
+                "position": 15
+              },
+              {
+                "chord": "G",
+                "position": 29
+              }
+            ]
+          },
+          {
+            "lyrics": "You laughed and called it wildflower wine",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 16
+              },
+              {
+                "chord": "Am",
+                "position": 26
+              },
+              {
+                "chord": "F",
+                "position": 37
+              }
+            ]
+          },
+          {
+            "lyrics": "Said it tasted like summer in a glass",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "C/E",
+                "position": 8
+              },
+              {
+                "chord": "F",
+                "position": 20
+              },
+              {
+                "chord": "G",
+                "position": 32
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Pour me something simple",
+            "chords": [
+              {
+                "chord": "F",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 8
+              },
+              {
+                "chord": "G",
+                "position": 18
+              }
+            ]
+          },
+          {
+            "lyrics": "Pour me something true",
+            "chords": [
+              {
+                "chord": "Am",
+                "position": 0
+              },
+              {
+                "chord": "F",
+                "position": 8
+              },
+              {
+                "chord": "G",
+                "position": 18
+              }
+            ]
+          },
+          {
+            "lyrics": "Pour me wildflower wine",
+            "chords": [
+              {
+                "chord": "F",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 8
+              },
+              {
+                "chord": "C/E",
+                "position": 19
+              }
+            ]
+          },
+          {
+            "lyrics": "I'd rather have that with you",
+            "chords": [
+              {
+                "chord": "F",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 11
+              },
+              {
+                "chord": "C",
+                "position": 26
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "lines": [
+          {
+            "lyrics": "Mason jars on the tailgate porch",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 6
+              },
+              {
+                "chord": "Am",
+                "position": 18
+              },
+              {
+                "chord": "F",
+                "position": 27
+              }
+            ]
+          },
+          {
+            "lyrics": "Cicadas tuning up their evening song",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "Cadd9",
+                "position": 8
+              },
+              {
+                "chord": "F",
+                "position": 24
+              },
+              {
+                "chord": "G",
+                "position": 32
+              }
+            ]
+          },
+          {
+            "lyrics": "You said forever's just a long today",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 9
+              },
+              {
+                "chord": "Am",
+                "position": 26
+              },
+              {
+                "chord": "F",
+                "position": 31
+              }
+            ]
+          },
+          {
+            "lyrics": "I said that sounds about right to me",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "C/E",
+                "position": 7
+              },
+              {
+                "chord": "F",
+                "position": 25
+              },
+              {
+                "chord": "G",
+                "position": 34
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Pour me something simple",
+            "chords": [
+              {
+                "chord": "F",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 8
+              },
+              {
+                "chord": "G",
+                "position": 18
+              }
+            ]
+          },
+          {
+            "lyrics": "Pour me something true",
+            "chords": [
+              {
+                "chord": "Am",
+                "position": 0
+              },
+              {
+                "chord": "F",
+                "position": 8
+              },
+              {
+                "chord": "G",
+                "position": 18
+              }
+            ]
+          },
+          {
+            "lyrics": "Pour me wildflower wine",
+            "chords": [
+              {
+                "chord": "F",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 8
+              },
+              {
+                "chord": "C/E",
+                "position": 19
+              }
+            ]
+          },
+          {
+            "lyrics": "I'd rather have that with you",
+            "chords": [
+              {
+                "chord": "F",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 11
+              },
+              {
+                "chord": "C",
+                "position": 26
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "platform"
+  },
+  {
+    "_id": "song-neon-static-nights",
+    "title": "Neon Static Nights",
+    "artist": "Coldwater Bend",
+    "key": "Em",
+    "bpm": 110,
+    "capo": 0,
+    "difficulty": "intermediate",
+    "tags": [
+      "rock",
+      "pop",
+      "intermediate"
+    ],
+    "strumming_pattern": {
+      "pattern": "D D U U D U",
+      "bpm": 110
+    },
+    "sections": [
+      {
+        "name": "Verse 1",
+        "lines": [
+          {
+            "lyrics": "Vending machine hum in the stairwell light",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 16
+              },
+              {
+                "chord": "G",
+                "position": 27
+              },
+              {
+                "chord": "D",
+                "position": 37
+              }
+            ]
+          },
+          {
+            "lyrics": "Static on the radio, nothing feels right",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 14
+              },
+              {
+                "chord": "Asus2",
+                "position": 21
+              },
+              {
+                "chord": "D",
+                "position": 35
+              }
+            ]
+          },
+          {
+            "lyrics": "Elevator music, empty hall",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 9
+              },
+              {
+                "chord": "G",
+                "position": 16
+              },
+              {
+                "chord": "D",
+                "position": 22
+              }
+            ]
+          },
+          {
+            "lyrics": "I've been waiting on your call",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "Bm7",
+                "position": 10
+              },
+              {
+                "chord": "D",
+                "position": 26
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Neon static nights",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 12
+              }
+            ]
+          },
+          {
+            "lyrics": "Keep me up till sunrise",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 16
+              }
+            ]
+          },
+          {
+            "lyrics": "Neon static nights",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "Dsus4",
+                "position": 12
+              }
+            ]
+          },
+          {
+            "lyrics": "Won't you stay a while",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "Asus2",
+                "position": 10
+              },
+              {
+                "chord": "Em",
+                "position": 17
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "lines": [
+          {
+            "lyrics": "Rooftop water tank, city glow",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 8
+              },
+              {
+                "chord": "G",
+                "position": 20
+              },
+              {
+                "chord": "D",
+                "position": 25
+              }
+            ]
+          },
+          {
+            "lyrics": "Everybody's somewhere else, I know",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 12
+              },
+              {
+                "chord": "Asus2",
+                "position": 22
+              },
+              {
+                "chord": "D",
+                "position": 30
+              }
+            ]
+          },
+          {
+            "lyrics": "Signal's weak but I don't mind",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 9
+              },
+              {
+                "chord": "G",
+                "position": 18
+              },
+              {
+                "chord": "D",
+                "position": 26
+              }
+            ]
+          },
+          {
+            "lyrics": "Find me where the static lines",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "Bm7",
+                "position": 8
+              },
+              {
+                "chord": "D",
+                "position": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Neon static nights",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 12
+              }
+            ]
+          },
+          {
+            "lyrics": "Keep me up till sunrise",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 16
+              }
+            ]
+          },
+          {
+            "lyrics": "Neon static nights",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "Dsus4",
+                "position": 12
+              }
+            ]
+          },
+          {
+            "lyrics": "Won't you stay a while",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "Asus2",
+                "position": 10
+              },
+              {
+                "chord": "Em",
+                "position": 17
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "platform"
+  },
+  {
+    "_id": "song-slow-burn",
+    "title": "Slow Burn",
+    "artist": "The Salt Line",
+    "key": "A",
+    "bpm": 88,
+    "capo": 0,
+    "difficulty": "advanced",
+    "tags": [
+      "blues",
+      "rock",
+      "advanced"
+    ],
+    "strumming_pattern": {
+      "pattern": "D DU D DU",
+      "bpm": 88
+    },
+    "sections": [
+      {
+        "name": "Verse 1",
+        "lines": [
+          {
+            "lyrics": "Whiskey light through the bar room glass",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 26
+              },
+              {
+                "chord": "E7",
+                "position": 35
+              }
+            ]
+          },
+          {
+            "lyrics": "Jukebox playing something from the past",
+            "chords": [
+              {
+                "chord": "F#m7",
+                "position": 0
+              },
+              {
+                "chord": "Dsus2",
+                "position": 16
+              },
+              {
+                "chord": "A",
+                "position": 35
+              }
+            ]
+          },
+          {
+            "lyrics": "You walked in like a slow burn",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 21
+              },
+              {
+                "chord": "E7",
+                "position": 26
+              }
+            ]
+          },
+          {
+            "lyrics": "Took the long way just for the turn",
+            "chords": [
+              {
+                "chord": "F#m7",
+                "position": 0
+              },
+              {
+                "chord": "Dsus2",
+                "position": 18
+              },
+              {
+                "chord": "A",
+                "position": 31
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Slow burn, watch it catch",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "E7",
+                "position": 5
+              },
+              {
+                "chord": "F#m7",
+                "position": 11
+              },
+              {
+                "chord": "Dsus2",
+                "position": 20
+              }
+            ]
+          },
+          {
+            "lyrics": "Slow burn, there's no going back",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 5
+              },
+              {
+                "chord": "E7",
+                "position": 11
+              },
+              {
+                "chord": "A",
+                "position": 28
+              }
+            ]
+          },
+          {
+            "lyrics": "Slow burn, let it grow",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "E7",
+                "position": 5
+              },
+              {
+                "chord": "F#m7",
+                "position": 11
+              },
+              {
+                "chord": "Dsus2",
+                "position": 18
+              }
+            ]
+          },
+          {
+            "lyrics": "Slow burn, baby I know",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 5
+              },
+              {
+                "chord": "E7",
+                "position": 11
+              },
+              {
+                "chord": "A",
+                "position": 18
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "lines": [
+          {
+            "lyrics": "Neon sign flickers, midnight hour",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 10
+              },
+              {
+                "chord": "E7",
+                "position": 20
+              },
+              {
+                "chord": "F#m7",
+                "position": 29
+              }
+            ]
+          },
+          {
+            "lyrics": "Something about you tastes like power",
+            "chords": [
+              {
+                "chord": "Dsus2",
+                "position": 0
+              },
+              {
+                "chord": "A",
+                "position": 20
+              },
+              {
+                "chord": "E7",
+                "position": 32
+              }
+            ]
+          },
+          {
+            "lyrics": "Two drinks in and I'm already gone",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 11
+              },
+              {
+                "chord": "E7",
+                "position": 30
+              }
+            ]
+          },
+          {
+            "lyrics": "Slow burn's the only kind of song",
+            "chords": [
+              {
+                "chord": "F#m7",
+                "position": 0
+              },
+              {
+                "chord": "Dsus2",
+                "position": 16
+              },
+              {
+                "chord": "A",
+                "position": 29
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Slow burn, watch it catch",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "E7",
+                "position": 5
+              },
+              {
+                "chord": "F#m7",
+                "position": 11
+              },
+              {
+                "chord": "Dsus2",
+                "position": 20
+              }
+            ]
+          },
+          {
+            "lyrics": "Slow burn, there's no going back",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 5
+              },
+              {
+                "chord": "E7",
+                "position": 11
+              },
+              {
+                "chord": "A",
+                "position": 28
+              }
+            ]
+          },
+          {
+            "lyrics": "Slow burn, let it grow",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "E7",
+                "position": 5
+              },
+              {
+                "chord": "F#m7",
+                "position": 11
+              },
+              {
+                "chord": "Dsus2",
+                "position": 18
+              }
+            ]
+          },
+          {
+            "lyrics": "Slow burn, baby I know",
+            "chords": [
+              {
+                "chord": "A",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 5
+              },
+              {
+                "chord": "E7",
+                "position": 11
+              },
+              {
+                "chord": "A",
+                "position": 18
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "platform"
+  },
+  {
+    "_id": "song-paper-boats",
+    "title": "Paper Boats",
+    "artist": "Nico Marsh",
+    "key": "F",
+    "bpm": 90,
+    "capo": 3,
+    "difficulty": "intermediate",
+    "tags": [
+      "folk",
+      "capo",
+      "intermediate"
+    ],
+    "strumming_pattern": {
+      "pattern": "D D U U D U",
+      "bpm": 90
+    },
+    "sections": [
+      {
+        "name": "Verse 1",
+        "lines": [
+          {
+            "lyrics": "Paper boats down the gutter stream",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "A",
+                "position": 21
+              },
+              {
+                "chord": "Bm",
+                "position": 28
+              }
+            ]
+          },
+          {
+            "lyrics": "Chasing something like a dream",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 18
+              },
+              {
+                "chord": "A",
+                "position": 25
+              }
+            ]
+          },
+          {
+            "lyrics": "Rain boots splashing on the walk",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "A",
+                "position": 11
+              },
+              {
+                "chord": "Bm",
+                "position": 28
+              }
+            ]
+          },
+          {
+            "lyrics": "We were young and didn't talk",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 18
+              },
+              {
+                "chord": "A",
+                "position": 25
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Let it float, let it go",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 7
+              },
+              {
+                "chord": "A",
+                "position": 21
+              }
+            ]
+          },
+          {
+            "lyrics": "Down the drain and out to sea",
+            "chords": [
+              {
+                "chord": "Bm",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 19
+              },
+              {
+                "chord": "D",
+                "position": 26
+              }
+            ]
+          },
+          {
+            "lyrics": "Let it float, let it go",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 7
+              },
+              {
+                "chord": "A",
+                "position": 21
+              }
+            ]
+          },
+          {
+            "lyrics": "That's how young hearts stay free",
+            "chords": [
+              {
+                "chord": "Bm",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 11
+              },
+              {
+                "chord": "D",
+                "position": 24
+              },
+              {
+                "chord": "A",
+                "position": 29
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "lines": [
+          {
+            "lyrics": "Puddles turned to little lakes",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "A",
+                "position": 18
+              },
+              {
+                "chord": "Bm",
+                "position": 25
+              }
+            ]
+          },
+          {
+            "lyrics": "Every storm's a chance we take",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 16
+              },
+              {
+                "chord": "A",
+                "position": 26
+              }
+            ]
+          },
+          {
+            "lyrics": "Now the boats are long since gone",
+            "chords": [
+              {
+                "chord": "D",
+                "position": 0
+              },
+              {
+                "chord": "A",
+                "position": 18
+              },
+              {
+                "chord": "Bm",
+                "position": 29
+              }
+            ]
+          },
+          {
+            "lyrics": "Still I hum that rainy song",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 17
+              },
+              {
+                "chord": "A",
+                "position": 23
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Let it float, let it go",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 7
+              },
+              {
+                "chord": "A",
+                "position": 21
+              }
+            ]
+          },
+          {
+            "lyrics": "Down the drain and out to sea",
+            "chords": [
+              {
+                "chord": "Bm",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 19
+              },
+              {
+                "chord": "D",
+                "position": 26
+              }
+            ]
+          },
+          {
+            "lyrics": "Let it float, let it go",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 7
+              },
+              {
+                "chord": "A",
+                "position": 21
+              }
+            ]
+          },
+          {
+            "lyrics": "That's how young hearts stay free",
+            "chords": [
+              {
+                "chord": "Bm",
+                "position": 0
+              },
+              {
+                "chord": "G",
+                "position": 11
+              },
+              {
+                "chord": "D",
+                "position": 24
+              },
+              {
+                "chord": "A",
+                "position": 29
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "platform"
+  },
+  {
+    "_id": "song-longest-night",
+    "title": "Longest Night",
+    "artist": "Wren & Sable",
+    "key": "G",
+    "bpm": 90,
+    "capo": 0,
+    "difficulty": "intermediate",
+    "tags": [
+      "folk",
+      "ballad",
+      "intermediate",
+      "long"
+    ],
+    "strumming_pattern": {
+      "pattern": "D D U U D U",
+      "bpm": 90
+    },
+    "sections": [
+      {
+        "name": "Intro",
+        "lines": [
+          {
+            "lyrics": "Mm, mm, mm",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Gmaj7",
+                "position": 4
+              },
+              {
+                "chord": "Em7",
+                "position": 8
+              }
+            ]
+          },
+          {
+            "lyrics": "Mm, mm, mm",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "Cadd9",
+                "position": 4
+              },
+              {
+                "chord": "D",
+                "position": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Verse 1",
+        "lines": [
+          {
+            "lyrics": "Clock on the wall says it's half past three",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Gmaj7",
+                "position": 13
+              },
+              {
+                "chord": "Em7",
+                "position": 28
+              },
+              {
+                "chord": "C",
+                "position": 38
+              }
+            ]
+          },
+          {
+            "lyrics": "Can't sleep, thoughts running wild and free",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Cadd9",
+                "position": 13
+              },
+              {
+                "chord": "D",
+                "position": 30
+              },
+              {
+                "chord": "G",
+                "position": 39
+              }
+            ]
+          },
+          {
+            "lyrics": "Streetlamp flickers through the blinds",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Gmaj7",
+                "position": 11
+              },
+              {
+                "chord": "Em7",
+                "position": 32
+              }
+            ]
+          },
+          {
+            "lyrics": "Counting all the reasons in my mind",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "Cadd9",
+                "position": 17
+              },
+              {
+                "chord": "D",
+                "position": 31
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pre-Chorus",
+        "lines": [
+          {
+            "lyrics": "Maybe I should let it go",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 15
+              },
+              {
+                "chord": "G",
+                "position": 22
+              }
+            ]
+          },
+          {
+            "lyrics": "Maybe morning comes too slow",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 14
+              },
+              {
+                "chord": "D",
+                "position": 24
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "This is the longest night",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 12
+              }
+            ]
+          },
+          {
+            "lyrics": "Stretching till the morning light",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 20
+              },
+              {
+                "chord": "G",
+                "position": 28
+              }
+            ]
+          },
+          {
+            "lyrics": "This is the longest night",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 12
+              }
+            ]
+          },
+          {
+            "lyrics": "But I'll be alright, alright",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 12
+              },
+              {
+                "chord": "G",
+                "position": 21
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "lines": [
+          {
+            "lyrics": "Kitchen light left on for company",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Gmaj7",
+                "position": 8
+              },
+              {
+                "chord": "Em7",
+                "position": 26
+              }
+            ]
+          },
+          {
+            "lyrics": "Kettle boiling, nobody but me",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "Cadd9",
+                "position": 16
+              },
+              {
+                "chord": "D",
+                "position": 27
+              }
+            ]
+          },
+          {
+            "lyrics": "Every hour feels like three",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Gmaj7",
+                "position": 6
+              },
+              {
+                "chord": "Em7",
+                "position": 22
+              }
+            ]
+          },
+          {
+            "lyrics": "This old house and its memories",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "Cadd9",
+                "position": 9
+              },
+              {
+                "chord": "D",
+                "position": 23
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pre-Chorus",
+        "lines": [
+          {
+            "lyrics": "Maybe I should let it go",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 15
+              },
+              {
+                "chord": "G",
+                "position": 22
+              }
+            ]
+          },
+          {
+            "lyrics": "Maybe morning comes too slow",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 14
+              },
+              {
+                "chord": "D",
+                "position": 24
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "This is the longest night",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 12
+              }
+            ]
+          },
+          {
+            "lyrics": "Stretching till the morning light",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 20
+              },
+              {
+                "chord": "G",
+                "position": 28
+              }
+            ]
+          },
+          {
+            "lyrics": "This is the longest night",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 12
+              }
+            ]
+          },
+          {
+            "lyrics": "But I'll be alright, alright",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 12
+              },
+              {
+                "chord": "G",
+                "position": 21
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bridge",
+        "lines": [
+          {
+            "lyrics": "Every longest night has ended once before",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 6
+              },
+              {
+                "chord": "G",
+                "position": 24
+              },
+              {
+                "chord": "D",
+                "position": 30
+              }
+            ]
+          },
+          {
+            "lyrics": "Every longest night has walked me to your door",
+            "chords": [
+              {
+                "chord": "Em",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 6
+              },
+              {
+                "chord": "D",
+                "position": 24
+              },
+              {
+                "chord": "G",
+                "position": 42
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "This is the longest night",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 12
+              }
+            ]
+          },
+          {
+            "lyrics": "Stretching till the morning light",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 20
+              },
+              {
+                "chord": "G",
+                "position": 28
+              }
+            ]
+          },
+          {
+            "lyrics": "This is the longest night",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Em",
+                "position": 12
+              }
+            ]
+          },
+          {
+            "lyrics": "But I'll be alright, alright",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "D",
+                "position": 12
+              },
+              {
+                "chord": "G",
+                "position": 21
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Outro",
+        "lines": [
+          {
+            "lyrics": "Mm, mm, mm",
+            "chords": [
+              {
+                "chord": "G",
+                "position": 0
+              },
+              {
+                "chord": "Gmaj7",
+                "position": 4
+              },
+              {
+                "chord": "Em7",
+                "position": 8
+              }
+            ]
+          },
+          {
+            "lyrics": "Mm, mm, mm, mm",
+            "chords": [
+              {
+                "chord": "C",
+                "position": 0
+              },
+              {
+                "chord": "Cadd9",
+                "position": 4
+              },
+              {
+                "chord": "D",
+                "position": 8
+              },
+              {
+                "chord": "G",
+                "position": 12
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "platform"
+  },
+  {
+    "_id": "song-quiet-static",
+    "title": "Quiet Static",
+    "artist": "Coldwater Bend",
+    "key": "Dm",
+    "bpm": 80,
+    "capo": 0,
+    "difficulty": "advanced",
+    "tags": [
+      "folk",
+      "minor",
+      "advanced"
+    ],
+    "strumming_pattern": {
+      "pattern": "D D DU D DU",
+      "bpm": 80
+    },
+    "sections": [
+      {
+        "name": "Verse 1",
+        "lines": [
+          {
+            "lyrics": "Television glow on an empty chair",
+            "chords": [
+              {
+                "chord": "Dm",
+                "position": 0
+              },
+              {
+                "chord": "Gm",
+                "position": 11
+              },
+              {
+                "chord": "A7",
+                "position": 22
+              },
+              {
+                "chord": "Dm7",
+                "position": 28
+              }
+            ]
+          },
+          {
+            "lyrics": "Quiet static filling up the air",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 13
+              },
+              {
+                "chord": "Dm",
+                "position": 28
+              }
+            ]
+          },
+          {
+            "lyrics": "Nobody's home but the porch light's on",
+            "chords": [
+              {
+                "chord": "Dm",
+                "position": 0
+              },
+              {
+                "chord": "Gm",
+                "position": 9
+              },
+              {
+                "chord": "A7",
+                "position": 22
+              },
+              {
+                "chord": "Dm7",
+                "position": 36
+              }
+            ]
+          },
+          {
+            "lyrics": "Habit dies slower than it's gone",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 11
+              },
+              {
+                "chord": "Dm",
+                "position": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Quiet static, quiet static",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 6
+              },
+              {
+                "chord": "Dm",
+                "position": 14
+              },
+              {
+                "chord": "Dm7",
+                "position": 20
+              }
+            ]
+          },
+          {
+            "lyrics": "Fill the silence you left behind",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 9
+              },
+              {
+                "chord": "Dm",
+                "position": 21
+              }
+            ]
+          },
+          {
+            "lyrics": "Quiet static, quiet static",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 6
+              },
+              {
+                "chord": "Dm",
+                "position": 14
+              },
+              {
+                "chord": "Dm7",
+                "position": 20
+              }
+            ]
+          },
+          {
+            "lyrics": "Some nights that's enough for mine",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 12
+              },
+              {
+                "chord": "Dm",
+                "position": 30
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Verse 2",
+        "lines": [
+          {
+            "lyrics": "Your side of the bed still smells like rain",
+            "chords": [
+              {
+                "chord": "Dm",
+                "position": 0
+              },
+              {
+                "chord": "Gm",
+                "position": 17
+              },
+              {
+                "chord": "A7",
+                "position": 27
+              },
+              {
+                "chord": "Dm7",
+                "position": 39
+              }
+            ]
+          },
+          {
+            "lyrics": "Old habits carved into the grain",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 11
+              },
+              {
+                "chord": "Dm",
+                "position": 27
+              }
+            ]
+          },
+          {
+            "lyrics": "I talk to the static like it's company enough",
+            "chords": [
+              {
+                "chord": "Dm",
+                "position": 0
+              },
+              {
+                "chord": "Gm",
+                "position": 14
+              },
+              {
+                "chord": "A7",
+                "position": 31
+              },
+              {
+                "chord": "Dm7",
+                "position": 39
+              }
+            ]
+          },
+          {
+            "lyrics": "Learning how to miss you isn't tough",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 16
+              },
+              {
+                "chord": "Dm",
+                "position": 31
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chorus",
+        "lines": [
+          {
+            "lyrics": "Quiet static, quiet static",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 6
+              },
+              {
+                "chord": "Dm",
+                "position": 14
+              },
+              {
+                "chord": "Dm7",
+                "position": 20
+              }
+            ]
+          },
+          {
+            "lyrics": "Fill the silence you left behind",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 9
+              },
+              {
+                "chord": "Dm",
+                "position": 21
+              }
+            ]
+          },
+          {
+            "lyrics": "Quiet static, quiet static",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 6
+              },
+              {
+                "chord": "Dm",
+                "position": 14
+              },
+              {
+                "chord": "Dm7",
+                "position": 20
+              }
+            ]
+          },
+          {
+            "lyrics": "Some nights that's enough for mine",
+            "chords": [
+              {
+                "chord": "Bb",
+                "position": 0
+              },
+              {
+                "chord": "C",
+                "position": 12
+              },
+              {
+                "chord": "Dm",
+                "position": 30
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "platform"
+  }
+]
