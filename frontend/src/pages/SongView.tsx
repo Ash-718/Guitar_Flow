@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
+import { ChordDiagramPopup } from '../components/chords/ChordDiagramPopup'
 import { ChordEditor } from '../components/chords/ChordEditor'
 import { SimplifyPreview, type SimplifyDiffEntry } from '../components/chords/SimplifyPreview'
 import { CapoControl } from '../components/song/CapoControl'
@@ -7,8 +8,10 @@ import { SectionBlock } from '../components/song/SectionBlock'
 import { StrummingPatternView } from '../components/song/StrummingPatternView'
 import { TransposeControl } from '../components/song/TransposeControl'
 import { Button } from '../components/ui/Button'
+import { listChords } from '../services/chordService'
 import { getSong } from '../services/songService'
 import { simplifyChords, transposeChords } from '../services/theoryService'
+import type { ChordLibraryEntry } from '../types/chord'
 import type { Song } from '../types/song'
 import { applyChordOverrides, overrideKey } from '../utils/applyChordOverrides'
 import { flattenChordStrings, getChordOccurrences, reconstructWithChords } from '../utils/flattenChords'
@@ -47,6 +50,13 @@ export function SongView() {
   const [transposedKey, setTransposedKey] = useState<string | null>(null)
 
   const [pendingSimplify, setPendingSimplify] = useState<PendingSimplification | null>(null)
+
+  const [chordLibrary, setChordLibrary] = useState<ChordLibraryEntry[]>([])
+  const [viewingDiagramFor, setViewingDiagramFor] = useState<string | null>(null)
+
+  useEffect(() => {
+    listChords().then(setChordLibrary).catch(() => {})
+  }, [])
 
   useEffect(() => {
     if (!id) return
@@ -133,8 +143,11 @@ export function SongView() {
   }
 
   function handleChordClick(sectionIndex: number, lineIndex: number, chordIndex: number, chord: string) {
-    if (!editMode) return
-    setEditingTarget({ sectionIndex, lineIndex, chordIndex, currentChord: chord })
+    if (editMode && tab === 'mine') {
+      setEditingTarget({ sectionIndex, lineIndex, chordIndex, currentChord: chord })
+    } else {
+      setViewingDiagramFor(chord)
+    }
   }
 
   // Overrides are stored against the untransposed, capo-0 song (so
@@ -273,9 +286,13 @@ export function SongView() {
           </Button>
         </div>
 
-        {editMode && (
+        {editMode ? (
           <p className="text-sm" style={{ color: 'var(--accent)' }}>
             Tap any chord below to change it.
+          </p>
+        ) : (
+          <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
+            Tap any chord to see how to play it.
           </p>
         )}
 
@@ -315,13 +332,15 @@ export function SongView() {
 
       <div className="flex flex-wrap gap-2">
         {distinctChords.map((chord) => (
-          <span
+          <button
             key={chord}
-            className="rounded-md border px-2.5 py-1 text-sm font-bold"
+            type="button"
+            onClick={() => setViewingDiagramFor(chord)}
+            className="rounded-md border px-2.5 py-1 text-sm font-bold hover:brightness-95"
             style={{ borderColor: 'var(--border)', color: 'var(--accent)' }}
           >
             {chord}
-          </span>
+          </button>
         ))}
       </div>
 
@@ -333,7 +352,7 @@ export function SongView() {
             key={i}
             section={section}
             sectionIndex={i}
-            onChordClick={editMode && tab === 'mine' ? handleChordClick : undefined}
+            onChordClick={handleChordClick}
           />
         ))}
       </div>
@@ -351,6 +370,14 @@ export function SongView() {
           diff={pendingSimplify.diff}
           onAccept={handleAcceptSimplify}
           onReject={handleRejectSimplify}
+        />
+      )}
+
+      {viewingDiagramFor && (
+        <ChordDiagramPopup
+          chordName={viewingDiagramFor}
+          entry={chordLibrary.find((c) => c.name === viewingDiagramFor)}
+          onClose={() => setViewingDiagramFor(null)}
         />
       )}
     </div>
