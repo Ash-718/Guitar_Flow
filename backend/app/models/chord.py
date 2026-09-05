@@ -30,7 +30,7 @@ class ChordDiagram(BaseModel):
 
 
 class ChordLibraryEntry(BaseModel):
-    id: str = Field(alias="_id")
+    id: str = Field(validation_alias="_id")
     name: str
     root: str
     quality: str

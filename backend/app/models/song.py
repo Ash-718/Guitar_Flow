@@ -21,7 +21,7 @@ class Section(BaseModel):
 
 
 class Song(BaseModel):
-    id: str = Field(alias="_id")
+    id: str = Field(validation_alias="_id")
     title: str
     artist: str
     key: str
@@ -40,7 +40,7 @@ class Song(BaseModel):
 class SongSummary(BaseModel):
     """Lightweight shape for search/list results - omits full lyrics/chords."""
 
-    id: str = Field(alias="_id")
+    id: str = Field(validation_alias="_id")
     title: str
     artist: str
     key: str

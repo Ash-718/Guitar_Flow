@@ -13,7 +13,7 @@ class ChordOverride(BaseModel):
 
 
 class UserSongVersion(BaseModel):
-    id: str = Field(alias="_id")
+    id: str = Field(validation_alias="_id")
     user_id: str
     song_id: str
     name: str = "My Version"

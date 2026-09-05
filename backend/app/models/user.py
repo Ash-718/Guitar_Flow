@@ -9,7 +9,7 @@ class UserPreferences(BaseModel):
 
 
 class User(BaseModel):
-    id: str = Field(alias="_id")
+    id: str = Field(validation_alias="_id")
     firebase_uid: str
     display_name: str = ""
     email: str = ""
