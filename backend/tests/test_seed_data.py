@@ -83,6 +83,26 @@ def test_required_mvp_diagram_chords_present(chords):
     assert required.issubset(library_names)
 
 
+def test_diagram_fret_window_is_internally_consistent(chords):
+    """A 4-fret diagram window can only show frets [base_fret, base_fret+3].
+    A shape fretted above that window (e.g. Gm at frets 3-5, C#m at 4-6)
+    needs base_fret raised to its lowest fretted position - otherwise the
+    diagram would render dots off the visible board."""
+    for entry in chords:
+        diagram = entry.get("diagram")
+        if not diagram:
+            continue
+        fretted = [f for f in diagram["frets"] if f > 0]
+        if not fretted:
+            continue
+        base_fret = diagram["base_fret"]
+        assert min(fretted) >= base_fret, f"{entry['name']}: base_fret {base_fret} is below its lowest fret {min(fretted)}"
+        assert max(fretted) <= base_fret + 3, (
+            f"{entry['name']}: fret {max(fretted)} falls outside the 4-fret window "
+            f"starting at base_fret={base_fret}"
+        )
+
+
 def test_chord_positions_within_lyric_bounds(songs):
     for s in songs:
         for sec in s["sections"]:
