@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 import type { Difficulty } from '../../types/chord'
 
 const DIFFICULTY_COLOR: Record<Difficulty, string> = {
-  beginner: 'var(--color-string-500)',
-  intermediate: 'var(--color-amber-500)',
-  advanced: '#c05a3d',
+  beginner: 'var(--difficulty-beginner)',
+  intermediate: 'var(--difficulty-intermediate)',
+  advanced: 'var(--difficulty-advanced)',
 }
 
 interface Props {

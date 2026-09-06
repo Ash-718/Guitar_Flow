@@ -12,7 +12,7 @@ export function StrummingPatternView({ pattern, bpm }: StrummingPattern) {
             className="flex h-8 w-8 items-center justify-center rounded-md text-sm font-bold"
             style={{
               background: 'var(--surface-raised)',
-              color: token === 'D' ? 'var(--accent)' : 'var(--color-string-500)',
+              color: token === 'D' ? 'var(--accent)' : 'var(--difficulty-beginner)',
             }}
             title={token === 'D' ? 'Downstrum' : token === 'U' ? 'Upstrum' : token}
           >

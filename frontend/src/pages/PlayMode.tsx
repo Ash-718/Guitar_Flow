@@ -105,6 +105,7 @@ export function PlayMode() {
           <button
             type="button"
             onClick={() => setIsPlaying((p) => !p)}
+            aria-label={isPlaying ? 'Pause' : 'Play'}
             className="flex h-14 w-14 items-center justify-center rounded-full text-2xl font-bold"
             style={{ background: 'var(--color-amber-400)', color: '#0b0a09' }}
           >

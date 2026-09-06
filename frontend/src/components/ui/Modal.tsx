@@ -36,7 +36,7 @@ export function Modal({ title, onClose, children }: Props) {
             type="button"
             onClick={onClose}
             aria-label="Close"
-            className="text-xl leading-none"
+            className="-m-2 flex h-9 w-9 items-center justify-center text-xl leading-none"
             style={{ color: 'var(--text-muted)' }}
           >
             ×

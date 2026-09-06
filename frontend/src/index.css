@@ -19,6 +19,7 @@
   --color-amber-400: #e8a33d;
   --color-amber-500: #d98c1f;
   --color-amber-600: #b8720f;
+  --color-amber-700: #9c5f0d;
 
   --color-string-500: #3d8f7a;
   --color-string-600: #2e6f5e;
@@ -32,8 +33,15 @@
   --text: var(--color-ink-900);
   --text-muted: var(--color-ink-500);
   --border: var(--color-ink-200);
-  --accent: var(--color-amber-600);
+  --accent: var(--color-amber-700);
   --accent-contrast: #ffffff;
+
+  /* Difficulty badge text colors - tuned per-mode against --surface-raised
+     so they clear WCAG AA (4.5:1) for the badge's small text, not just
+     look plausible against the page background. */
+  --difficulty-beginner: #2b6e5a;
+  --difficulty-intermediate: #8f5811;
+  --difficulty-advanced: #a1432b;
 }
 
 :root[data-theme="dark"],
@@ -48,6 +56,9 @@
     --border: var(--color-ink-700);
     --accent: var(--color-amber-400);
     --accent-contrast: var(--color-ink-950);
+    --difficulty-beginner: #4fa88f;
+    --difficulty-intermediate: var(--color-amber-500);
+    --difficulty-advanced: #d1654a;
   }
 }
 
@@ -61,6 +72,9 @@
   --border: var(--color-ink-700);
   --accent: var(--color-amber-400);
   --accent-contrast: var(--color-ink-950);
+  --difficulty-beginner: #4fa88f;
+  --difficulty-intermediate: var(--color-amber-500);
+  --difficulty-advanced: #d1654a;
 }
 
 * {
